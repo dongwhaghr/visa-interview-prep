@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 비자 인터뷰 예상 질문 · 동화일렉트로라이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F3;
+    --card:#FFFFFF;
+    --ink:#1F2421;
+    --ink-soft:#5B5F58;
+    --hairline:#DEDACB;
+    --green:#215732;
+    --green-deep:#163C22;
+    --green-tint:#E7EFE6;
+    --amber:#B8721F;
+    --amber-tint:#FAF0E1;
+    --amber-border:#E6C990;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+    line-height:1.6;
+    padding-bottom:80px;
+  }
+  .stampline{
+    height:6px;
+    background:repeating-linear-gradient(90deg, var(--green) 0 10px, transparent 10px 20px);
+    opacity:.55;
+  }
+  header{
+    max-width:760px;
+    margin:0 auto;
+    padding:44px 24px 28px;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.12em;
+    color:var(--green);
+    text-transform:uppercase;
+    margin:0 0 10px;
+  }
+  h1{
+    font-family:'Noto Serif KR', serif;
+    font-weight:700;
+    font-size:30px;
+    margin:0 0 8px;
+    color:var(--green-deep);
+    letter-spacing:-0.01em;
+  }
+  .subtitle{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:0 0 26px;
+  }
+  .searchbar{
+    position:sticky;
+    top:0;
+    z-index:5;
+    background:var(--paper);
+    padding:14px 0 10px;
+    border-bottom:1px solid var(--hairline);
+  }
+  .searchbar input{
+    width:100%;
+    padding:12px 16px;
+    border-radius:10px;
+    border:1px solid var(--hairline);
+    background:var(--card);
+    font-size:15px;
+    font-family:inherit;
+    color:var(--ink);
+    outline:none;
+  }
+  .searchbar input:focus{
+    border-color:var(--green);
+    box-shadow:0 0 0 3px var(--green-tint);
+  }
+  .count{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-top:8px;
+  }
+  main{
+    max-width:760px;
+    margin:0 auto;
+    padding:8px 24px 0;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--hairline);
+    border-radius:14px;
+    margin:20px 0;
+    overflow:hidden;
+  }
+  .card-head{
+    display:flex;
+    gap:16px;
+    padding:20px 22px 16px;
+    align-items:flex-start;
+  }
+  .num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    font-weight:500;
+    color:var(--green);
+    background:var(--green-tint);
+    border-radius:8px;
+    min-width:32px;
+    height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+  }
+  .q-en{
+    font-family:'Noto Serif KR', serif;
+    font-weight:500;
+    font-size:17px;
+    color:var(--ink);
+    margin:0 0 4px;
+  }
+  .q-kr{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin:0;
+  }
+  .body{
+    padding:0 22px 20px 70px;
+  }
+  .answer-block{
+    margin-bottom:12px;
+  }
+  .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--green);
+    margin:0 0 6px;
+  }
+  .answer-en{
+    font-size:15.5px;
+    background:var(--green-tint);
+    border-radius:10px;
+    padding:12px 14px;
+    margin:0 0 6px;
+    white-space:pre-line;
+  }
+  .answer-kr{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin:0;
+    padding:0 2px;
+  }
+  .toggle{
+    margin-top:14px;
+    background:none;
+    border:1px solid var(--hairline);
+    color:var(--ink-soft);
+    font-family:'Noto Sans KR', sans-serif;
+    font-size:12.5px;
+    padding:7px 12px;
+    border-radius:8px;
+    cursor:pointer;
+  }
+  .toggle:hover{
+    border-color:var(--amber-border);
+    color:var(--amber);
+  }
+  .intent{
+    display:none;
+    margin-top:12px;
+    background:var(--amber-tint);
+    border:1px solid var(--amber-border);
+    border-radius:10px;
+    padding:13px 15px;
+    font-size:13.5px;
+    color:#5A4118;
+  }
+  .intent.open{ display:block; }
+  .intent b{ color:var(--amber); }
+  .hidden{ display:none !important; }
+  footer{
+    max-width:760px;
+    margin:36px auto 0;
+    padding:0 24px;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<div class="stampline"></div>
+<header>
+  <p class="eyebrow">Dongwha Electrolyte · Tennessee Dispatch</p>
+  <h1>B1 비즈니스 비자 인터뷰 예상 질문</h1>
+  <p class="subtitle">테네시 공장 단기 출장(설비 점검) 대비 · 질문 검색 후 답변과 영사 의도를 확인하세요</p>
+</header>
+
+<div class="searchbar">
+  <div style="max-width:760px;margin:0 auto;padding:0 24px;">
+    <input id="search" type="text" placeholder="키워드로 검색 (예: 급여, 체류기간, 회사)">
+    <div class="count" id="count"></div>
+  </div>
+</div>
+
+<main id="list"></main>
+
+<footer>총 10개 질문 · 마지막 업데이트 2026-07-07</footer>
+
+<script>
+const data = [
+  {
+    q_en: "What is the purpose of your trip?",
+    q_kr: "방문 목적이 무엇입니까?",
+    a_en: "It's a business trip.\nI am going to check our new plant in Tennessee.",
+    a_kr: "출장입니다.\n테네시 공장을 점검하러 갑니다.",
+    intent: "불법 노동 여부를 확인하려는 질문입니다. 공장 세팅(setup)이나 일(work)하러 간다고 하면 거절될 수 있습니다. 오직 점검(check)과 검토(review)가 목적임을 밝히세요."
+  },
+  {
+    q_en: "What exactly will you do there?",
+    q_kr: "거기서 정확히 무슨 일을 하나요?",
+    a_en: "I will just check the guidelines and meet with local managers.",
+    a_kr: "가이드라인을 확인하고 현지 매니저들과 회의만 합니다.",
+    intent: "기술직이므로 현장에서 직접 장비를 만질까 봐 의심하는 질문입니다. 기계를 고치거나(fix) 조작(operate)한다는 표현은 피하세요."
+  },
+  {
+    q_en: "Why do you need 2 weeks?",
+    q_kr: "왜 2주나 가야 하나요?",
+    a_en: "Because I have to check many parts of the plant and write a report for our head office.",
+    a_kr: "공장의 많은 부분을 점검하고 본사에 제출할 보고서를 작성해야 하기 때문입니다.",
+    intent: "체류 기간의 타당성을 의심하는 질문입니다. 2주는 노동으로 보기엔 짧고 단순 회의로는 길어 보일 수 있으니, '현장 확인'과 '본사 보고서 작성'으로 일정이 채워져 있음을 설명하세요."
+  },
+  {
+    q_en: "Who is paying for your trip?",
+    q_kr: "출장 비용은 누가 냅니까?",
+    a_en: "My company, Dongwha Electrolyte in Korea, pays for everything.\nI receive my salary from Korea.",
+    a_kr: "한국의 동화일렉트로라이트가 모두 지원합니다.\n제 급여도 한국에서 받습니다.",
+    intent: "미국 내 취업 여부를 확인하는 질문입니다. 미국 법인에서 단 1달러라도 받으면 B1 위반이 되므로, 비용 출처가 철저히 한국 본사임을 명확히 하세요."
+  },
+  {
+    q_en: "Are there no workers in the U.S. to do this?",
+    q_kr: "미국에는 이 일을 할 직원이 없습니까?",
+    a_en: "There are local staff, but they need the head office guideline.",
+    a_kr: "현지 직원이 있지만 본사 가이드라인이 필요합니다.",
+    intent: "미국인 일자리 침해 여부를 확인하는 질문입니다. 미국인을 고용하지 않고 한국에서 인력을 파견하는 이유로, 본사 표준(standard) 확인은 본사 인력만 가능하다는 명분이 필요합니다."
+  },
+  {
+    q_en: "When will you come back to Korea?",
+    q_kr: "한국은 언제 돌아오나요?",
+    a_en: "I will return on July 17th.\nI must report the results to my boss in Korea.",
+    a_kr: "7월 17일에 돌아옵니다.\n한국에 있는 상사에게 결과를 보고해야 합니다.",
+    intent: "불법 체류나 이민 의도를 파악하려는 질문입니다. 한국에 돌아와서 반드시 해야 하는 후속 업무(보고)가 있음을 강조하세요."
+  },
+  {
+    q_en: "What does Dongwha Electrolyte do?",
+    q_kr: "동화일렉트로라이트는 무엇을 만드는 회사인가요?",
+    a_en: "We make electrolyte.\nIt is a key material for lithium-ion batteries.",
+    a_kr: "저희는 전해액을 만듭니다.\n리튬 이온 배터리의 핵심 소재입니다.",
+    intent: "실존 기업 여부와 미국 공장과의 연계성을 확인하는 질문입니다. 복잡한 화학 용어 대신 'battery material'이나 'electrolyte' 단어만 확실히 전달하면 충분합니다."
+  },
+  {
+    q_en: "Where will you stay?",
+    q_kr: "어디서 지내나요?",
+    a_en: "I will stay at a company house near the factory.",
+    a_kr: "공장 근처 회사 숙소요.",
+    intent: ""
+  },
+  {
+    q_en: "Why are you applying for a visa instead of ESTA?",
+    q_kr: "ESTA 대신 왜 B1 비자를 발급받으시죠?",
+    a_en: "Because it is our official company process.",
+    a_kr: "우리 회사의 공식 절차이기 때문입니다.",
+    intent: ""
+  },
+  {
+    q_en: "When are you going and when will you come back?",
+    q_kr: "언제 출발해서 언제 돌아옵니까?",
+    a_en: "From July 6th to July 17th. Two weeks.",
+    a_kr: "7/6 ~ 7/17, 2주입니다.",
+    intent: "영사가 간단히 'What are your travel dates?'(출장 날짜가 어떻게 되나요?)라고 물어볼 수도 있습니다."
+  }
+];
+
+const list = document.getElementById('list');
+const search = document.getElementById('search');
+const count = document.getElementById('count');
+
+function render(filter=''){
+  const f = filter.trim().toLowerCase();
+  list.innerHTML = '';
+  let shown = 0;
+  data.forEach((item, i) => {
+    const haystack = (item.q_en+item.q_kr+item.a_en+item.a_kr+item.intent).toLowerCase();
+    if(f && !haystack.includes(f)) return;
+    shown++;
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-head">
+        <div class="num">${String(i+1).padStart(2,'0')}</div>
+        <div>
+          <p class="q-en">${item.q_en}</p>
+          <p class="q-kr">${item.q_kr}</p>
+        </div>
+      </div>
+      <div class="body">
+        <div class="answer-block">
+          <p class="label">recommended answer</p>
+          <p class="answer-en">${item.a_en}</p>
+          <p class="answer-kr">${item.a_kr}</p>
+        </div>
+        ${item.intent ? `
+        <button class="toggle" type="button">영사의 실제 의도 보기</button>
+        <div class="intent"><b>영사의 의도 및 주의사항 —</b> ${item.intent}</div>
+        ` : ''}
+      </div>
+    `;
+    const btn = card.querySelector('.toggle');
+    if(btn){
+      const box = card.querySelector('.intent');
+      btn.addEventListener('click', () => {
+        box.classList.toggle('open');
+        btn.textContent = box.classList.contains('open') ? '접기' : '영사의 실제 의도 보기';
+      });
+    }
+    list.appendChild(card);
+  });
+  count.textContent = f ? `${shown} / ${data.length}개 표시 중` : `총 ${data.length}개 질문`;
+}
+
+search.addEventListener('input', e => render(e.target.value));
+render();
+</script>
+
+</body>
+</html>
