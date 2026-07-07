@@ -218,7 +218,7 @@
 
 <main id="list"></main>
 
-<footer>총 11개 질문 · 마지막 업데이트 2026-07-07</footer>
+<footer>총 12개 질문 · 마지막 업데이트 2026-07-07</footer>
 
 <script>
 const data = [
@@ -288,7 +288,7 @@ const data = [
   {
     q_en: "Have you visited the US before?",
     q_kr: "이전에 미국에 방문한 적이 있습니까?",
-    a_en: "Answer based on your own travel history.",
+    a_en: "",
     a_kr: "본인의 경험에 따라 답변",
     intent: ""
   },
@@ -297,6 +297,13 @@ const data = [
     q_kr: "직원은 몇 명입니까?",
     a_en: "There are currently about 15 employees.",
     a_kr: "현재 15명이 근무 중입니다.",
+    intent: ""
+  },
+  {
+    q_en: "Did you bring any food?",
+    q_kr: "음식을 가져오셨나요?",
+    a_en: "No.",
+    a_kr: "아니요.",
     intent: ""
   }
 ];
@@ -326,7 +333,7 @@ function render(filter=''){
       <div class="body">
         <div class="answer-block">
           <p class="label">recommended answer</p>
-          <p class="answer-en">${item.a_en}</p>
+          ${item.a_en ? `<p class="answer-en">${item.a_en}</p>` : ''}
           <p class="answer-kr">${item.a_kr}</p>
         </div>
         ${item.intent ? `
