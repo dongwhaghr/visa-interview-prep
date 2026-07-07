@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B1 비자 인터뷰 예상 질문 · 동화일렉트로라이트</title>
+<title>미국 입국심사 인터뷰 예상 질문 · 동화일렉트로라이트</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -205,8 +205,8 @@
 <div class="stampline"></div>
 <header>
   <p class="eyebrow">Dongwha Electrolyte · Tennessee Dispatch</p>
-  <h1>B1 비즈니스 비자 인터뷰 예상 질문</h1>
-  <p class="subtitle">테네시 공장 단기 출장(설비 점검) 대비 · 질문 검색 후 답변과 영사 의도를 확인하세요</p>
+  <h1>미국 입국심사 인터뷰 예상 질문</h1>
+  <p class="subtitle">테네시 공장 단기 출장(설비 점검) 대비 · 질문 검색 후 추천 답변을 확인하세요</p>
 </header>
 
 <div class="searchbar">
@@ -218,79 +218,86 @@
 
 <main id="list"></main>
 
-<footer>총 10개 질문 · 마지막 업데이트 2026-07-07</footer>
+<footer>총 11개 질문 · 마지막 업데이트 2026-07-07</footer>
 
 <script>
 const data = [
   {
     q_en: "What is the purpose of your trip?",
     q_kr: "방문 목적이 무엇입니까?",
-    a_en: "It's a business trip.\nI am going to check our new plant in Tennessee.",
-    a_kr: "출장입니다.\n테네시 공장을 점검하러 갑니다.",
-    intent: "불법 노동 여부를 확인하려는 질문입니다. 공장 세팅(setup)이나 일(work)하러 간다고 하면 거절될 수 있습니다. 오직 점검(check)과 검토(review)가 목적임을 밝히세요."
+    a_en: "It's a business trip.\nI am going to check our new plant in Tennessee.\nI will train local staff for the plant mass production.",
+    a_kr: "출장입니다.\n테네시 공장을 점검하러 갑니다.\n공장 대량생산을 위한 현지 직원 트레이닝 예정입니다.",
+    intent: ""
   },
   {
     q_en: "What exactly will you do there?",
     q_kr: "거기서 정확히 무슨 일을 하나요?",
-    a_en: "I will just check the guidelines and meet with local managers.",
-    a_kr: "가이드라인을 확인하고 현지 매니저들과 회의만 합니다.",
-    intent: "기술직이므로 현장에서 직접 장비를 만질까 봐 의심하는 질문입니다. 기계를 고치거나(fix) 조작(operate)한다는 표현은 피하세요."
+    a_en: "I will just check the production guidelines and train new local staffs.",
+    a_kr: "생산 가이드라인을 확인하고 현지 신규 직원들 트레이닝합니다.",
+    intent: ""
   },
   {
-    q_en: "Why do you need 2 weeks?",
-    q_kr: "왜 2주나 가야 하나요?",
-    a_en: "Because I have to check many parts of the plant and write a report for our head office.",
-    a_kr: "공장의 많은 부분을 점검하고 본사에 제출할 보고서를 작성해야 하기 때문입니다.",
-    intent: "체류 기간의 타당성을 의심하는 질문입니다. 2주는 노동으로 보기엔 짧고 단순 회의로는 길어 보일 수 있으니, '현장 확인'과 '본사 보고서 작성'으로 일정이 채워져 있음을 설명하세요."
+    q_en: "How long are you staying?",
+    q_kr: "얼마나 머무르시나요?",
+    a_en: "I'm staying about 2 months.",
+    a_kr: "약 2개월 정도 머무릅니다.",
+    intent: ""
   },
   {
-    q_en: "Who is paying for your trip?",
-    q_kr: "출장 비용은 누가 냅니까?",
-    a_en: "My company, Dongwha Electrolyte in Korea, pays for everything.\nI receive my salary from Korea.",
-    a_kr: "한국의 동화일렉트로라이트가 모두 지원합니다.\n제 급여도 한국에서 받습니다.",
-    intent: "미국 내 취업 여부를 확인하는 질문입니다. 미국 법인에서 단 1달러라도 받으면 B1 위반이 되므로, 비용 출처가 철저히 한국 본사임을 명확히 하세요."
-  },
-  {
-    q_en: "Are there no workers in the U.S. to do this?",
-    q_kr: "미국에는 이 일을 할 직원이 없습니까?",
-    a_en: "There are local staff, but they need the head office guideline.",
-    a_kr: "현지 직원이 있지만 본사 가이드라인이 필요합니다.",
-    intent: "미국인 일자리 침해 여부를 확인하는 질문입니다. 미국인을 고용하지 않고 한국에서 인력을 파견하는 이유로, 본사 표준(standard) 확인은 본사 인력만 가능하다는 명분이 필요합니다."
-  },
-  {
-    q_en: "When will you come back to Korea?",
-    q_kr: "한국은 언제 돌아오나요?",
-    a_en: "I will return on July 17th.\nI must report the results to my boss in Korea.",
-    a_kr: "7월 17일에 돌아옵니다.\n한국에 있는 상사에게 결과를 보고해야 합니다.",
-    intent: "불법 체류나 이민 의도를 파악하려는 질문입니다. 한국에 돌아와서 반드시 해야 하는 후속 업무(보고)가 있음을 강조하세요."
-  },
-  {
-    q_en: "What does Dongwha Electrolyte do?",
-    q_kr: "동화일렉트로라이트는 무엇을 만드는 회사인가요?",
-    a_en: "We make electrolyte.\nIt is a key material for lithium-ion batteries.",
-    a_kr: "저희는 전해액을 만듭니다.\n리튬 이온 배터리의 핵심 소재입니다.",
-    intent: "실존 기업 여부와 미국 공장과의 연계성을 확인하는 질문입니다. 복잡한 화학 용어 대신 'battery material'이나 'electrolyte' 단어만 확실히 전달하면 충분합니다."
-  },
-  {
-    q_en: "Where will you stay?",
+    q_en: "Where are you staying? / Where will you stay?",
     q_kr: "어디서 지내나요?",
     a_en: "I will stay at a company house near the factory.",
     a_kr: "공장 근처 회사 숙소요.",
     intent: ""
   },
   {
-    q_en: "Why are you applying for a visa instead of ESTA?",
-    q_kr: "ESTA 대신 왜 B1 비자를 발급받으시죠?",
-    a_en: "Because it is our official company process.",
-    a_kr: "우리 회사의 공식 절차이기 때문입니다.",
+    q_en: "Who is paying for your trip?",
+    q_kr: "출장 비용은 누가 냅니까?",
+    a_en: "My company, Dongwha Electrolyte in Korea, pays for everything.\nI receive my salary from Korea.",
+    a_kr: "한국의 동화일렉트로라이트가 모두 지원합니다.\n급여도 한국에서 받습니다.",
     intent: ""
   },
   {
-    q_en: "When are you going and when will you come back?",
-    q_kr: "언제 출발해서 언제 돌아옵니까?",
-    a_en: "From July 6th to July 17th. Two weeks.",
-    a_kr: "7/6 ~ 7/17, 2주입니다.",
-    intent: "영사가 간단히 'What are your travel dates?'(출장 날짜가 어떻게 되나요?)라고 물어볼 수도 있습니다."
+    q_en: "When will you go back to Korea?",
+    q_kr: "한국은 언제 돌아가나요?",
+    a_en: "I will return on October 4th.",
+    a_kr: "10월 4일입니다.",
+    intent: ""
+  },
+  {
+    q_en: "Do you have a return ticket?",
+    q_kr: "귀국 항공권을 가지고 있습니까?",
+    a_en: "Yes.",
+    a_kr: "네 (대답하면서 항공권 보여주기)",
+    intent: ""
+  },
+  {
+    q_en: "Where is the company located?",
+    q_kr: "방문하는 회사는 어디에 있습니까?",
+    a_en: "It's located in Clarksville, Tennessee.",
+    a_kr: "미국 테네시주 클락스빌에 위치해 있습니다.",
+    intent: ""
+  },
+  {
+    q_en: "What does the company make?",
+    q_kr: "무엇을 만드는 회사인가요?",
+    a_en: "We produce electrolyte for secondary batteries.",
+    a_kr: "이차전지용 전해액을 제조합니다.",
+    intent: ""
+  },
+  {
+    q_en: "Have you visited the US before?",
+    q_kr: "이전에 미국에 방문한 적이 있습니까?",
+    a_en: "Answer based on your own travel history.",
+    a_kr: "본인의 경험에 따라 답변",
+    intent: ""
+  },
+  {
+    q_en: "How many staff are there?",
+    q_kr: "직원은 몇 명입니까?",
+    a_en: "There are currently about 15 employees.",
+    a_kr: "현재 15명이 근무 중입니다.",
+    intent: ""
   }
 ];
 
